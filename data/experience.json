@@ -1,0 +1,131 @@
+[
+  {
+    "company": "Sigma Computing",
+    "logoSrc": "assets/companies/sigma-computing.svg",
+    "position": "Senior Analytics Engineer",
+    "date": "October 2025 - Present",
+    "description": [
+      "Synthesizing analytics engineering skills at a rapidly scaling data tooling company",
+      "Working inside the internal data team of a SaaS analytics product",
+      "Bridging prior experience across modelling, pipelines, and stakeholder translation"
+    ]
+  },
+  {
+    "company": "7shifts",
+    "logoSrc": "assets/companies/7shifts-rebrand.svg",
+    "position": "Analytics Engineer",
+    "date": "March 2025 - October 2025",
+    "description": [
+      "Designed and maintained dbt models supporting company-wide analytics",
+      "Improved pipeline reliability, data quality, and documentation standards",
+      "Translated business requirements into scalable analytical architecture"
+    ]
+  },
+  {
+    "company": "University of Saskatchewan",
+    "logoSrc": "assets/companies/usask-logo.png",
+    "position": "Sessional Lecturer",
+    "date": "September 2022 - October 2025",
+    "description": [
+      "Delivered undergraduate courses to diverse cohorts across multiple terms",
+      "Developed curriculum, assessments, and interactive teaching materials",
+      "Mentored students one-on-one through challenging quantitative coursework"
+    ]
+  },
+  {
+    "company": "7shifts",
+    "logoSrc": "assets/companies/7shifts-rebrand.svg",
+    "position": "Senior Data Analyst",
+    "date": "March 2024 - March 2025",
+    "description": [
+      "Owned large-scale analytical engineering projects end to end",
+      "Established analytics best practices adopted across team and company",
+      "Tackled advanced statistical problems as an individual contributor"
+    ]
+  },
+  {
+    "company": "7shifts",
+    "logoSrc": "assets/companies/7shifts-rebrand.svg",
+    "position": "Data Analyst",
+    "date": "June 2023 - February 2024",
+    "description": [
+      "Designed and ran A/B experiments to drive product growth decisions",
+      "First hands-on analytics engineering work inside a modern data stack",
+      "Partnered with monetization, marketing, sales, and engineering stakeholders"
+    ]
+  },
+  {
+    "company": "StandardAero",
+    "logoSrc": "assets/companies/standardaero-logo.png",
+    "position": "Business Process Data Scientist",
+    "date": "July 2022 - June 2023",
+    "description": [
+      "Applied statistical modelling to industrial simulation and risk analysis",
+      "Communicated quantitative results to non-technical engineering stakeholders",
+      "Managed project delivery across business process improvement initiatives"
+    ]
+  },
+  {
+    "company": "University of Toronto",
+    "logoSrc": "assets/companies/utoronto-logo.png",
+    "position": "Research Assistant",
+    "date": "December 2021 - May 2022",
+    "description": [
+      "Applied NLP techniques to large economic datasets for academic research",
+      "Collaborated within a rigorous interdisciplinary research environment"
+    ]
+  },
+  {
+    "company": "University of Toronto",
+    "logoSrc": "assets/companies/utoronto-logo.png",
+    "position": "Teaching Assistant",
+    "date": "September 2021 - April 2022",
+    "description": [
+      "Led tutorial sections covering statistics and machine learning concepts",
+      "Adapted explanations to multiple learning styles for a non-specialist audience"
+    ]
+  },
+  {
+    "company": "Affinity Credit Union",
+    "logoSrc": "assets/companies/affinity-logo.svg",
+    "position": "Development and Database Manager",
+    "date": "May 2021 - August 2021",
+    "description": [
+      "Led cross-functional projects as the primary technical point of contact",
+      "Communicated technical requirements to non-technical external stakeholders",
+      "Applied project management principles to deliver on schedule"
+    ]
+  },
+  {
+    "company": "Affinity Credit Union",
+    "logoSrc": "assets/companies/affinity-logo.svg",
+    "position": "Development and Database Manager",
+    "date": "May 2020 - September 2020",
+    "description": [
+      "Built and maintained data pipelines within the BI and Automation team",
+      "Improved data quality, integrity, and server management processes",
+      "Developed data models to support scalable reporting infrastructure"
+    ]
+  },
+  {
+    "company": "Affinity Credit Union",
+    "logoSrc": "assets/companies/affinity-logo.svg",
+    "position": "Market Analyst",
+    "date": "January 2020 - April 2020",
+    "description": [
+      "Produced market research reports tailored for an industry audience",
+      "Applied machine learning to real business forecasting problems",
+      "Performed qualitative and quantitative economic analysis for stakeholders"
+    ]
+  },
+  {
+    "company": "University of Saskatchewan",
+    "logoSrc": "assets/companies/usask-logo.png",
+    "position": "Research Assistant",
+    "date": "May 2019 - August 2019",
+    "description": [
+      "Generated literature reviews and background materials for a research paper",
+      "Developed attention to detail and research rigour in a computer science lab"
+    ]
+  }
+]

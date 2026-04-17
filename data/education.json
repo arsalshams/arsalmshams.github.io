@@ -1,0 +1,32 @@
+[
+  {
+    "institution": "Heriot-Watt University",
+    "logoSrc": "assets/companies/utoronto-logo.png",
+    "degree": "Bachelor of Computer Science",
+    "description": "Talk about HWU",
+    "courseHighlights": [
+      "Economic Machine Learning (A+)",
+      "Statistical Methods for Machine Learning and Data Mining: (A)",
+      "Computational Statistics: (A-)",
+      "Econometrics: (A-)"
+    ]
+  },
+  {
+    "institution": "Seneca Polytechnic",
+    "logoSrc": "assets/companies/usask-logo.png",
+    "degree": "Business Analytics",
+    "description": "Talk about BA",
+    "courseHighlightsEconomics": [
+      "Introduction to Empirical Economics (100%)",
+      "Intermediate Microeconomics (96%)",
+      "Monetary Theory (94%)",
+      "Mathematical Introduction to Micro Theory (93%)"
+    ],
+    "courseHighlightsComputerScience": [
+      "Information Visualization (95%)",
+      "Machines and Algorithms (93%)",
+      "Simulation Principles (91%)",
+      "Deep Learning (87%)"
+    ]
+  }
+]

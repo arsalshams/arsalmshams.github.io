@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-S9LK80LCD4"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-S9LK80LCD4');
+  </script>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Matthew Senick — Senior Analytics Engineer. Design, data, and engineering.">
+
+  <title>Matthew Senick</title>
+
+  <!-- Google Fonts: Space Grotesk + Spectral -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Spectral:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Icon Image -->
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+  <!-- Custom Scripts -->
+  <script type="text/javascript" src="./scripts/gen_tiles.js"></script>
+  <script type="text/javascript" src="./scripts/gen_shapes.js"></script>
+</head>
+
+<body>
+  <div id="scroll-progress"></div>
+
+  <header>
+    <nav class="navbar">
+      <div class="nav-container">
+        <a class="nav-brand" href="https://matthewsenick.com">Matthew Senick</a>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle-checkbox" aria-label="Toggle navigation">
+        <label for="nav-toggle" class="nav-toggle-label" aria-hidden="true">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+        <ul class="nav-links">
+          <li><a href="#about-me">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#speaking">Speaking</a></li>
+          <li><a href="#papers">Papers</a></li>
+          <li><a href="#articles">Articles</a></li>
+          <li><a href="#contact">Social</a></li>
+          <li><a href="assets/files/Resume_Short.pdf" target="_blank" id="resume-link">Resume</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Dark Mode Toggle -->
+  <label class="switch" aria-label="Toggle dark mode">
+    <input type="checkbox" id="dark-mode-toggle">
+    <span class="slider round"></span>
+  </label>
+
+  <main>
+
+    <!-- Hero / Title -->
+    <section id="title" class="hero in-view">
+      <div class="container hero-grid">
+        <div class="hero-image">
+          <img class="profile-pic" src="assets/other/avatar.PNG" alt="Profile picture of Matthew Senick">
+        </div>
+        <div class="hero-text">
+          <h1 class="name">Matthew Senick</h1>
+          <p class="subtitle">Senior Analytics Engineer, Sigma</p>
+          <p class="credential">M. Economics, University of Toronto</p>
+          <p class="credential">B. Computer Science &amp; Economics, University of Saskatchewan</p>
+          <p class="credential">San Francisco, CA</p>
+          <div class="now-card">
+            <div class="now-header">
+              <span class="now-dot"></span>
+              <span class="now-label">Now</span>
+            </div>
+            <ul class="now-list">
+              <li>Building data products at Sigma Computing</li>
+              <li>Writing about analytics engineering &amp; causal inference</li>
+            </ul>
+          </div>
+          <div class="hero-cta">
+            <a href="#articles" class="btn-accent">Read my writing</a>
+            <a href="#contact" class="btn-ghost">Get in touch</a>
+          </div>
+        </div>
+      </div>
+      <svg class="background-shapes" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"></svg>
+    </section>
+
+    <!-- About Me -->
+    <section id="about-me">
+      <div class="container">
+        <h2>About Me</h2>
+        <div class="about-content">
+          <p>
+            As a software data professional and econometrics lecturer, I am passionate about exploring the
+            intersection of data science, technology consulting, and applied econometrics. Throughout my career, I
+            have gained experience in a variety of skills across disparate industries, including software,
+            aerospace, finance, and academia.
+          </p>
+          <p>
+            My academic background includes a Masters of Economics from the University of Toronto and a Double Honours
+            Bachelor in Computer Science and Economics from the University of Saskatchewan. This unique combination of
+            skills has allowed me to specialize in econometric exploration through computational advancements, with a
+            particular focus on machine learning, natural language processing, and big data techniques.
+          </p>
+          <p>
+            In my free time, I enjoy staying up-to-date on emerging technologies, with a current interest in
+            advancements in Analytics Engineering, Quasiexperimental Studies, and Machine Learning Engineering.
+          </p>
+        </div>
+
+        <div class="icon-rows">
+          <div class="icon-row">
+            <img src="assets/icons/python.svg" alt="Python">
+            <img src="assets/icons/sql.svg" alt="SQL">
+            <img src="assets/icons/r.svg" alt="R">
+          </div>
+          <div class="icon-row">
+            <img src="assets/icons/snowflake.svg" alt="Snowflake">
+            <img src="assets/icons/dbt.svg" alt="dbt">
+            <img src="assets/icons/js.svg" alt="JavaScript">
+            <img src="assets/icons/postgresql.svg" alt="PostgreSQL">
+          </div>
+          <div class="icon-row">
+            <img src="assets/icons/stata.svg" alt="Stata">
+            <img src="assets/icons/java.svg" alt="Java">
+            <img src="assets/icons/cpp.png" alt="C++">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience"></section>
+
+    <!-- EDUCATION -->
+    <section id="education"></section>
+
+    <!-- PROJECTS -->
+    <section id="projects"></section>
+
+    <!-- SPEAKING -->
+    <section id="speaking"></section>
+
+    <!-- PAPERS -->
+    <section id="papers"></section>
+
+    <!-- ARTICLES -->
+    <section id="articles"></section>
+
+    <!-- CONTACT -->
+    <section id="contact"></section>
+
+  </main>
+
+  <footer>
+    <p>&copy; <script>document.write(new Date().getFullYear())</script> Matthew Senick</p>
+  </footer>
+
+  <script src="index.js"></script>
+  <script>
+    document.getElementById('resume-link').addEventListener('click', function () {
+      gtag('event', 'resume_download', {
+        'event_category': 'engagement',
+        'event_label': 'clicked_resume_link'
+      });
+    });
+  </script>
+</body>
+
+</html>

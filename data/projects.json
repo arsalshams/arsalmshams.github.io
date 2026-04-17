@@ -1,0 +1,34 @@
+[
+  {
+    "title": "dbt Inline ML Preprocessing Package",
+    "githubLink": "https://github.com/Matts52/dbt_ml_inline_preprocessing",
+    "imageSrc": "assets/projects/dbt_ml_inline_preprocessing.png",
+    "description": "A published dbt package that abstracts away the SQL code necessary to perform various machine learning preprocessing techniques. All techniques are meant to be applied inline within an SQL select statement.",
+    "demoLink": "https://hub.getdbt.com/Matts52/dbt_ml_inline_preprocessing/latest/",
+    "display": "true"
+  },
+  {
+    "title": "Helper Website for Students",
+    "githubLink": "https://github.com/Matts52/ECO304",
+    "imageSrc": "assets/projects/ECO304_HOME.png",
+    "description": "I built a website for my students that generated practice questions, visualizations, and a glossary of terminology to help them learn the material. With this interactive tool, my students were able to test their knowledge and reinforce key concepts, making the learning experience more engaging and effective.",
+    "demoLink": "http://www.matthewsenick.com/ECO304/",
+    "display": "true"
+  },
+  {
+    "title": "Q-Learning Auction Agent",
+    "githubLink": "https://github.com/Matts52/Q_Learn_Single_Sealed_Bid_Auction",
+    "imageSrc": "assets/projects/Q_Learn.PNG",
+    "description": "The goal of this project was to take an initial step to exploring reinforcement learning and agent-based machine learning. Essentially, this JavaScript application uses a single state Q-Learning algorithm to teach an artificial agent how to optimally bid in a two-player sealed bid auction setting.",
+    "demoLink": "https://matthewsenick.com/Q_Learn_Single_Sealed_Bid_Auction/",
+    "display": "true"
+  },
+  {
+    "title": "Command Line Chess",
+    "githubLink": "https://github.com/Matts52/CLChess",
+    "imageSrc": "assets/projects/CLChess.jpg",
+    "description": "A minimalist command line chess application built with python. In this game, you can choose to play against another user, a random-moving AI player, or a simple cost-minimizing AI player.",
+    "demoLink": "https://github.com/Matts52/CLChess",
+    "display": "true"
+  }
+]

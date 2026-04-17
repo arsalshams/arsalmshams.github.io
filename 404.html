@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="404 — Page not found. Matthew Senick's portfolio.">
+
+  <title>404 — Query Returned 0 Rows | Matthew Senick</title>
+
+  <!-- Google Fonts: Space Grotesk + Spectral -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Spectral:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Icon Image -->
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+  <style>
+    /* ===========================
+       404 PAGE — LOCAL STYLES
+       Dark mode tokens are inherited from styles.css (.dark-mode on body).
+       =========================== */
+
+    /* Full-screen hero layout */
+    .not-found-page {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .not-found-hero {
+      flex: 1;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      padding: var(--space-8) var(--space-5);
+      opacity: 1;
+      transform: none;
+    }
+
+    /* The ghosted 404 typographic backdrop */
+    .not-found-ghost {
+      position: absolute;
+      font-family: var(--font-body);
+      font-weight: 700;
+      font-size: clamp(12rem, 30vw, 22rem);
+      line-height: 1;
+      letter-spacing: -0.05em;
+      color: transparent;
+      -webkit-text-stroke: 2px var(--accent);
+      opacity: 0.07;
+      user-select: none;
+      pointer-events: none;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      white-space: nowrap;
+      z-index: 0;
+      transition: opacity var(--duration-slow) var(--ease);
+    }
+
+    .dark-mode .not-found-ghost {
+      opacity: 0.09;
+    }
+
+    /* Floating SVG shapes — same as hero */
+    .not-found-shapes {
+      position: absolute;
+      z-index: 0;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      pointer-events: none;
+    }
+
+    /* Main content panel */
+    .not-found-content {
+      position: relative;
+      z-index: 1;
+      max-width: 600px;
+      width: 100%;
+      text-align: left;
+    }
+
+    /* SQL-style error label */
+    .not-found-label {
+      display: inline-flex;
+      align-items: center;
+      gap: var(--space-2);
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: var(--space-4);
+    }
+
+    .not-found-label::before {
+      content: '';
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--accent);
+      flex-shrink: 0;
+    }
+
+    /* The query block */
+    .not-found-query {
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 0.85rem;
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-left: 3px solid var(--accent);
+      border-radius: 8px;
+      padding: var(--space-3) var(--space-4);
+      color: var(--text-muted);
+      box-shadow: var(--card-shadow);
+      margin-bottom: var(--space-5);
+      line-height: 1.8;
+      overflow-x: auto;
+    }
+
+    .not-found-query .sql-keyword {
+      color: var(--accent);
+      font-weight: 700;
+    }
+
+    .not-found-query .sql-string {
+      color: var(--text);
+    }
+
+    .not-found-query .sql-comment {
+      color: var(--text-muted);
+      opacity: 0.7;
+      font-style: italic;
+    }
+
+    /* Result status line */
+    .not-found-result {
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      margin-bottom: var(--space-5);
+      padding: var(--space-2) var(--space-3);
+      background: var(--accent-light);
+      border-radius: 6px;
+      display: inline-block;
+    }
+
+    .not-found-result .result-count {
+      font-weight: 700;
+      color: var(--accent);
+    }
+
+    /* Witty Spectral line */
+    .not-found-aside {
+      font-family: var(--font-accent);
+      font-style: italic;
+      font-size: 1.125rem;
+      color: var(--text-muted);
+      margin-bottom: var(--space-6);
+      line-height: 1.6;
+      max-width: 46ch;
+    }
+
+    /* CTA row */
+    .not-found-cta {
+      display: flex;
+      gap: var(--space-3);
+      flex-wrap: wrap;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .not-found-content {
+        text-align: center;
+      }
+
+      .not-found-label {
+        justify-content: center;
+      }
+
+      .not-found-aside {
+        max-width: 100%;
+      }
+
+      .not-found-cta {
+        justify-content: center;
+      }
+
+      .not-found-ghost {
+        font-size: clamp(8rem, 40vw, 12rem);
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Dark Mode Toggle -->
+  <label class="switch" aria-label="Toggle dark mode">
+    <input type="checkbox" id="dark-mode-toggle">
+    <span class="slider round"></span>
+  </label>
+
+  <div class="not-found-page">
+
+    <header>
+      <nav class="navbar">
+        <div class="nav-container">
+          <a class="nav-brand" href="/">Matthew Senick</a>
+          <ul class="nav-links">
+            <li><a href="/">Home</a></li>
+            <li><a href="/#articles">Articles</a></li>
+            <li><a href="/#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="not-found-hero">
+
+      <!-- Ghosted 404 backdrop -->
+      <span class="not-found-ghost" aria-hidden="true">404</span>
+
+      <!-- Floating SVG shapes (static, matching hero aesthetic) -->
+      <svg class="not-found-shapes background-shapes" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <circle cx="8" cy="15" r="3" fill="none" stroke="var(--accent)" stroke-width="0.4" opacity="0.25"/>
+        <rect x="88" y="10" width="5" height="5" fill="none" stroke="var(--accent)" stroke-width="0.4" opacity="0.2" transform="rotate(20 90 12)"/>
+        <polygon points="75,75 80,85 70,85" fill="none" stroke="var(--accent)" stroke-width="0.4" opacity="0.2"/>
+        <circle cx="15" cy="80" r="2" fill="var(--accent)" opacity="0.1"/>
+        <circle cx="90" cy="55" r="4" fill="none" stroke="var(--accent)" stroke-width="0.3" opacity="0.18"/>
+        <rect x="5" y="50" width="4" height="4" fill="var(--accent)" opacity="0.08" transform="rotate(30 7 52)"/>
+        <polygon points="50,5 54,13 46,13" fill="none" stroke="var(--accent)" stroke-width="0.35" opacity="0.15"/>
+        <circle cx="55" cy="90" r="2.5" fill="none" stroke="var(--accent)" stroke-width="0.4" opacity="0.2"/>
+        <rect x="30" y="85" width="3" height="3" fill="var(--accent)" opacity="0.1" transform="rotate(15 31 86)"/>
+      </svg>
+
+      <div class="not-found-content">
+
+        <div class="not-found-label">Error 404 &mdash; Resource Not Found</div>
+
+        <div class="not-found-query">
+          <span class="sql-keyword">SELECT</span> <span class="sql-string">*</span><br>
+          <span class="sql-keyword">FROM</span>&nbsp;&nbsp; <span class="sql-string">matts52.github.io</span><br>
+          <span class="sql-keyword">WHERE</span>&nbsp; <span class="sql-string">path</span> = <span class="sql-string">'<span id="missing-path">the page you requested</span>'</span><br>
+          <span class="sql-keyword">LIMIT</span>&nbsp; <span class="sql-string">1</span><span class="sql-comment">;</span>
+        </div>
+
+        <div class="not-found-result">
+          Query complete &mdash; <span class="result-count">0 rows</span> returned &nbsp;(0.052s)
+        </div>
+
+        <p class="not-found-aside">
+          The model ran. The pipeline finished. The dashboard loaded. There is simply nothing here to show you.
+        </p>
+
+        <div class="not-found-cta">
+          <a href="/" class="btn-accent">Go Home</a>
+          <a href="/#articles" class="btn-ghost">Read the blog</a>
+        </div>
+
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; <script>document.write(new Date().getFullYear())</script> Matthew Senick</p>
+    </footer>
+
+  </div>
+
+  <script>
+    // ===========================
+    // Dark Mode (self-contained)
+    // ===========================
+    (function () {
+      const toggle = document.getElementById('dark-mode-toggle');
+      const body = document.body;
+
+      // Sync toggle state with stored preference
+      const stored = localStorage.getItem('dark-mode') === 'true';
+      if (stored) {
+        body.classList.add('dark-mode');
+        toggle.checked = true;
+      }
+
+      toggle.addEventListener('change', function () {
+        if (this.checked) {
+          body.classList.add('dark-mode');
+          localStorage.setItem('dark-mode', 'true');
+        } else {
+          body.classList.remove('dark-mode');
+          localStorage.setItem('dark-mode', 'false');
+        }
+      });
+    })();
+
+    // ===========================
+    // Show the actual missing path in the query block
+    // ===========================
+    (function () {
+      const pathEl = document.getElementById('missing-path');
+      const path = window.location.pathname;
+      if (path && path !== '/') {
+        pathEl.textContent = path;
+      }
+    })();
+  </script>
+
+</body>
+
+</html>

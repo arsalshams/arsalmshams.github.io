@@ -1,0 +1,16 @@
+[
+  {
+    "link": "https://www.linkedin.com/in/matthew-senick/",
+    "iconSrc": "assets/icons/linkedin-white.svg",
+    "altText": "LinkedIn",
+    "title": "LinkedIn",
+    "show": true
+  },
+  {
+    "link": "https://github.com/Matts52",
+    "iconSrc": "assets/icons/github.svg",
+    "altText": "GitHub",
+    "title": "GitHub",
+    "show": true
+  }
+]
