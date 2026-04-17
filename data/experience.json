@@ -97,10 +97,10 @@
     ]
   },
   {
-    "company": "Affinity Credit Union",
+    "company": "Lenskart Middle East",
     "logoSrc": "assets/companies/affinity-logo.svg",
-    "position": "Development and Database Manager",
-    "date": "May 2020 - September 2020",
+    "position": "Data Analyst, Product Analytics",
+    "date": "December 2021 - December 2022",
     "description": [
       "Built and maintained data pipelines within the BI and Automation team",
       "Improved data quality, integrity, and server management processes",
@@ -108,21 +108,21 @@
     ]
   },
   {
-    "company": "Affinity Credit Union",
+    "company": "Lenskart Middle East",
     "logoSrc": "assets/companies/affinity-logo.svg",
-    "position": "Market Analyst",
-    "date": "January 2020 - April 2020",
+    "position": "Junior Data Analyst",
+    "date": "January 2021 - November 2021",
     "description": [
       "Produced market research reports tailored for an industry audience",
-      "Applied machine learning to real business forecasting problems",
+      "Applied statistical modelling to industrial simulation and risk analysis",
       "Performed qualitative and quantitative economic analysis for stakeholders"
     ]
   },
   {
-    "company": "University of Saskatchewan",
+    "company": "Heriot-Watt University",
     "logoSrc": "assets/companies/usask-logo.png",
     "position": "Research Assistant",
-    "date": "May 2019 - August 2019",
+    "date": "May 2020 - August 2020",
     "description": [
       "Generated literature reviews and background materials for a research paper",
       "Developed attention to detail and research rigour in a computer science lab"
