@@ -2,7 +2,7 @@
 
 Personal portfolio site for Matthew Senick. Vanilla HTML/CSS/JS — no frameworks, no build step, no dependencies.
 
-Live at **[matthewsenick.com](https://matthewsenick.com)**
+Live at **[arsalanshams.com](https://arsalshams.github.io/arsalmshams.github.io/)**
 
 ---
 
